@@ -1,0 +1,42 @@
+// Place all the styles related to the Mailinglist controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+}
+
+form #mc-embedded-subscribe {
+	background-color: green;
+	color: green;
+	font-family: 'Lobster Two', cursive;
+}
+
+.mailing-list h1, h2 {
+  font-family: 'Lobster Two', cursive;
+  font-size:1.5em;
+  font-weight:600;
+  text-align: center;
+}
+
+// medium screen
+@media only screen and (min-width: 40.063em) {
+  .mailing-list h1, h2{
+    font-size:26px;
+    text-align: center;
+  }
+}
+
+// large screen
+@media only screen and (min-width: 64.063em) {
+  .mailing-list h1, h2 {
+    font-size:28px;
+    text-align: center;
+  }
+}
+
+.mailing-list {
+  padding:20px 10px 20px 10px;
+}

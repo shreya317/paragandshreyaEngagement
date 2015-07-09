@@ -31,6 +31,14 @@ body {
 	box-shadow: -10px 10px 7px #888888;
 }
 
+.more-details {
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  font-size:1.6em;
+  font-weight:600;
+  padding-top: 30px;
+}
+
 
 .button {
   font-family:'Raleway',Helvetica,Arial,sans-serif;
@@ -64,6 +72,10 @@ li {
 
 .namelogo {
   padding:26px 10px 10px 10px;
+}
+
+#name-date {
+  padding-top: 6px;
 }
 
 .namelogo h1, h2 {
@@ -110,6 +122,10 @@ footer {
   .timer {
   	text-align: center;
   }
+  .more-details {
+    text-align: center;
+    font-size: 40px;
+  }
   footer {
   	text-align: left;
   }
@@ -150,7 +166,7 @@ footer {
 }
 
 .about,.work,.contact { 
-  padding:50px 0 0 0;
+  // padding:10px 0 0 0;
 }
 
 .about img {
@@ -177,7 +193,7 @@ hr {
 }
 
 footer {
-  padding:80px 0 10px 0;
+  padding: 40px 0 10px 0;
 }
 
 footer a:hover {

@@ -86,6 +86,10 @@ footer {
 	text-align: center;
 }
 
+.music-player {
+  text-align: center;
+}
+
 // medium screen
 @media only screen and (min-width: 40.063em) {
   .namelogo h1, h2{
@@ -108,6 +112,9 @@ footer {
   }
   footer {
   	text-align: left;
+  }
+  .music-player {
+    text-align: right;
   }
 }
 

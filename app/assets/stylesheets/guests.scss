@@ -3,29 +3,70 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
 /*// large screen*/
-.e_login h3 {
-    text-align: center;
-    padding-bottom: 3px;
+.e_login h1 {
+  text-align: center;
 }
 
-.e_login input, form, label, h3{
-	margin-left: 20px;
+.e_login input,
+label,
+h3,
+h4,
+h5,
+h6,
+select{
 	font-family: 'Lobster Two', cursive;
     font-weight:400;
+}
+
+.e_rsvp select {
+    width: 150px;
+}
+
+.e_rsvp .location {
+    margin-bottom: 5px;
+    text-align: center;
+    color: green;
+}
+
+.e_rsvp h4 {
+    text-align: center;
+}
+
+.e_rsvp h3,
+.e_login h3 {
+    text-align: center;
+    padding-bottom: 20px
+}
+
+.e_rsvp input[type='submit'] {
+    width: 200px;
+    height: 100px;
+}
+
+.e_rsvp select {
+    font-size: 16px;
+}
+
+.e_rsvp title,
+.e_rsvp select,
+.e_login label,
+.e_login input {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .e_login input {
     margin-bottom: 30px;
 }
 
-
 .e_login form {
     background: white;
     padding: 10px;
 }
 
-.e_login label {
+.e_login label, .e_rsvp label {
     font-size: 15px;
+    padding-bottom: 10px;
 }
 
 .e_login .indicates-required {
@@ -41,10 +82,11 @@
 
 .e_login input[type='text'] {
 	width: 275px;
+    font-size: 18px;
 }
 
 .e_login input[type='submit'] {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	width: 100px;
     height: 30px;
     background: #aaa;
@@ -56,11 +98,16 @@
     background-color: gray;
 }
 
+// large screen
 @media only screen and (min-width: 64.063em) {
-  .e_login input[type='text'] {
+    .e_login input[type='text'] {
         width: 400px;
     }
     .e_login input[type='submit'] {
         width: 150px;
+    }
+    .e_rsvp input[type='submit'] {
+        width: 100px;
+        height: 30px;
     }
 }

@@ -1,3 +1,66 @@
-// Place all the styles related to the Guests controller here.
+/*// Place all the styles related to the Guests controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+/*// large screen*/
+.e_login h3 {
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.e_login input, form, label, h3{
+	margin-left: 20px;
+	font-family: 'Lobster Two', cursive;
+    font-weight:400;
+}
+
+.e_login input {
+    margin-bottom: 30px;
+}
+
+
+.e_login form {
+    background: white;
+    padding: 10px;
+}
+
+.e_login label {
+    font-size: 15px;
+}
+
+.e_login .indicates-required {
+    padding-right: 20px;
+    text-align: right;
+    color: black;
+    font-size: 13px;
+}
+
+.e_login .asterisk {
+    color: #c60;
+}
+
+.e_login input[type='text'] {
+	width: 275px;
+}
+
+.e_login input[type='submit'] {
+	margin-bottom: 10px;
+	width: 100px;
+    height: 30px;
+    background: #aaa;
+    color: white;
+    font-size: 16px;
+}
+
+.e_login input[type='submit']:hover {
+    background-color: gray;
+}
+
+@media only screen and (min-width: 64.063em) {
+  .e_login input[type='text'] {
+        width: 400px;
+    }
+    .e_login input[type='submit'] {
+        width: 150px;
+    }
+}

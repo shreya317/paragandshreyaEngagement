@@ -7,15 +7,18 @@
   text-align: center;
 }
 
-.e_login input,
+/*.e_login,*/
 label,
 h3,
 h4,
 h5,
-h6,
-select{
+h6 {
 	font-family: 'Lobster Two', cursive;
     font-weight:400;
+}
+
+.e_login input {
+  font-family:'Raleway', Helvetica,Arial,sans-serif;
 }
 
 .e_rsvp select {
@@ -39,12 +42,17 @@ select{
 }
 
 .e_rsvp input[type='submit'] {
+    font-family: 'Lobster Two', cursive;
     width: 200px;
     height: 100px;
 }
 
+.e_rsvp label h5 {
+  font-family:'Raleway', Helvetica,Arial,sans-serif;
+}
+
 .e_rsvp select {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .e_rsvp title,
@@ -82,7 +90,7 @@ select{
 
 .e_login input[type='text'] {
 	width: 275px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .e_login input[type='submit'] {
@@ -92,6 +100,7 @@ select{
     background: #aaa;
     color: white;
     font-size: 16px;
+    font-family: 'Lobster Two', cursive;
 }
 
 .e_login input[type='submit']:hover {

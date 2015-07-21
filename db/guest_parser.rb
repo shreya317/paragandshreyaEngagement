@@ -1,4 +1,4 @@
-def parce_guest_login
+def parse_guest_login
   Spreadsheet.client_encoding = 'UTF-8'
   @workbook = Spreadsheet.open("../../../desktop/guestLogin.xls")
 

@@ -1,15 +1,33 @@
-<div class="row">
-  <div class="large-12 columns">
+<div class="row" id="name-date">
+  <div class="medium-6 large-6 columns namelogo">
+    <h1>Parag & Shreya | 9.6.2015</h1>
+  </div>
+  <div class= "medium-6 large-6 columns timer">
+    <iframe width="304" height="104" src="https://w2.countingdownto.com/956582" frameborder="0">
+    </iframe>
+  </div>
+</div>
+
+<div class="row e_login">
+  <div class="large-6 medium-6 columns e-pic">
+    <%= image_tag 'DSC_9678.JPG', class:'tree_pic'%>
+  </div>
+  <div class="large-6 medium-6 columns">
     <form action="guests/retrieve_guest" method="get">
-      First name:<br>
+      <h3>Engagement R.S.V.P.</h3>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <label>First Name
+        <span class="asterisk">*</span>
+      </label>
       <input type="text" name="first_name">
-      <br>
-      Last name:<br>
+      <label>Last Name
+        <span class="asterisk">*</span>
+      </label>
       <input type="text" name="last_name">
-      <br>
-      Zip Code:<br>
+      <label>Zip Code
+        <span class="asterisk">*</span>
+      </label>
       <input type="text" name="zip_code">
-      <br>
       <input type="submit" value="Submit">
     </form>
   </div>

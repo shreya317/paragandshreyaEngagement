@@ -7,8 +7,6 @@
   text-align: center;
 }
 
-/*.e_login,*/
-label,
 h3,
 h4,
 h5,
@@ -31,6 +29,10 @@ h6 {
     color: green;
 }
 
+.e_rsvp label h5 {
+    font-size: 15px;
+}
+
 .e_rsvp h4 {
     text-align: center;
 }
@@ -47,20 +49,27 @@ h6 {
     height: 100px;
 }
 
-.e_rsvp label h5 {
+.e_rsvp label h5, .e_login label {
   font-family:'Raleway', Helvetica,Arial,sans-serif;
 }
 
 .e_rsvp select {
+    font-family:'Raleway', Helvetica,Arial,sans-serif;
     font-size: 15px;
 }
 
-.e_rsvp title,
 .e_rsvp select,
+.e_rsvp textarea,
 .e_login label,
 .e_login input {
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.e_rsvp textarea {
+    width: 285px;
+    font-family:'Raleway', Helvetica,Arial,sans-serif;
+    resize: none;
 }
 
 .e_login input {
@@ -118,5 +127,8 @@ h6 {
     .e_rsvp input[type='submit'] {
         width: 100px;
         height: 30px;
+    }
+    .e_rsvp textarea {
+    width: 400px;
     }
 }

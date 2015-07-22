@@ -10,34 +10,43 @@
 
 <div class="row e_login">
     <div class="large-6 medium-6 columns e-pic">
-    <%= image_tag 'DSC_9678.JPG', class:'tree_pic'%>
+        <%= image_tag 'DSC_9678.JPG', class:'tree_pic'%>
     </div>
-     <div class="large-6 medium-6 columns e_rsvp">
-     <form method="post">
-        <h3>Engagement RSVP</h3>
-        <div class="large-12 title">
-            <label><h5>Hello <%= @guest.first_name%>, will you be attending?</h5></label>
-            </div>
-        <div class="row">
-            <div class="large-6 medium-6 columns small-6">
+
+    <div class="large-6 medium-6 columns e_rsvp">
+        <form method="post">
+            <h3>Engagement R.S.V.P.</h3>
+
+            <div class="large-12">
+                <label>
+                    <h5>Hello <%= @guest.first_name%>, will you be attending?
+                    </h5>
+                </label>
+
                 <select name="attending">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
+
+                <label>
+                    <h5>Comment(s):</h5>
+                </label>
+
+                <textarea rows="4">
+                </textarea>
+
                 <input type="submit" value="Submit">
+                <hr>
+
+                <div class= "location">
+                    <b><h4 class= "location">Patel Residence</h4></b>
+                    <h6 class= "location">9443 Lotus Ave.</h6>
+                    <h6 class= "location">Skokie, IL 60077</h6>
+                    <br>
+                    <h6 class="location">Sunday September 6th, 2015 </h6>
+                    <h6 class= "location">10:30 AM</h6>
+                </div>
             </div>
-            <div class="large-6 medium-6 columns small-6">
-             <!-- <input type="submit" value="Submit"> -->
-            </div>
-        </div>
-        <hr>
-        <div class= "location">
-            <b><h4 class= "location">Patel Residence</h4></b>
-            <h6 class= "location">9443 Lotus Ave.</h6>
-            <h6 class= "location">Skokie, IL 60077</h6>
-            <h6 class= "location">10:30 AM</h6>
-        </div>
+        </form>
     </div>
-    </form>
-  </div>
 </div>

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'mailinglist#index'
-  root 'welcome#index'
+  # root 'welcome#index'
+  root 'guests#index'
 
 end

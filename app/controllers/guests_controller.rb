@@ -20,9 +20,9 @@ class GuestsController < ApplicationController
     rsvp.attending = attending
 
     if rsvp.save!
-      redirect_to "/guests"
+      render "welcome/index"
     else
-      redirect_to "/"
+      redirect_to "/guests"
     end
   end
 

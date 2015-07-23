@@ -28,10 +28,20 @@ class GuestsController < ApplicationController
 
   def show
     @guest = Guest.find_by(encrypted_id: params[:id])
+    @family_members = Guest.where(family_id: @guest.family_id)
+  end
+
+  def update_all
+    params["guest"].keys.each do |id|
+      @guest = Guest.find(id.to_i)
+      attending = params[:attending] == "yes" ? true : false
+      @guest.attending = attending
+    end
+    redirect_to "/welcome/index"
   end
 
   private
   def guest_params
-    params.require(:guest).permit(:first_name, :last_name, :zip_code)
+    params.require(:guest).permit(:first_name, :last_name, :zip_code, :attending)
   end
 end

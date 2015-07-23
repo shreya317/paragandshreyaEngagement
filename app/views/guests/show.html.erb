@@ -14,39 +14,30 @@
   </div>
 
   <div class="large-6 medium-6 columns e_rsvp">
-    <form method="post">
-      <h3>Engagement R.S.V.P.</h3>
+    <h3>Engagement R.S.V.P.</h3>
+    Logged in as: <%= @guest.first_name%>
+    <p>Family id: <%=@guest.family_id%></p>
+    <%= form_for :guest, :url => update_all_path, :html => { :method => :put } do %>
+        <% @family_members.each do |guest|%>
+            <%= fields_for "guest[]", guest do |guest_fields| %>
 
-      <div class="large-12">
-        <label>
-          <h5>Hello <%= @guest.first_name%>, will you be attending?
-          </h5>
-        </label>
+            Hello <%=guest.first_name%>, will you be attending?
+                <%= guest_fields.text_field :attending %>
+            <% end %>
+        <% end %>
+        <%= submit_tag %>
+    <% end %>
 
-        <select name="attending">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
 
-        <label>
-          <h5>Comment(s):</h5>
-        </label>
 
-        <textarea rows="4">
-        </textarea>
-
-        <input type="submit" value="Submit">
-        <hr>
-
-        <div class= "location">
-          <b><h4 class= "location">Patel Residence</h4></b>
-          <h6 class= "location">9443 Lotus Ave.</h6>
-          <h6 class= "location">Skokie, IL 60077</h6>
-          <br>
-          <h6 class="location">Sunday September 6th, 2015 </h6>
-          <h6 class= "location">10:30 AM</h6>
-        </div>
+      <div class= "location">
+        <b><h4 class= "location">Patel Residence</h4></b>
+        <h6 class= "location">9443 Lotus Ave.</h6>
+        <h6 class= "location">Skokie, IL 60077</h6>
+        <br>
+        <h6 class="location">Sunday September 6th, 2015 </h6>
+        <h6 class= "location">10:30 AM</h6>
       </div>
-    </form>
+    </div>
   </div>
 </div>

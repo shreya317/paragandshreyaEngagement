@@ -11,28 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150718231742) do
+ActiveRecord::Schema.define(version: 20150723010547) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "families", force: :cascade do |t|
+    t.string   "family_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "guests", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "zip_code"
+    t.boolean  "attending"
+    t.string   "comments"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "encrypted_id"
+    t.integer  "family_id"
   end
 
-  create_table "rsvps", force: :cascade do |t|
-    t.integer  "guest_id"
-    t.boolean  "attending"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "rsvps", ["guest_id"], name: "index_rsvps_on_guest_id", using: :btree
-
-  add_foreign_key "rsvps", "guests"
 end

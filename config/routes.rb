@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get '/guests' => 'guests#index'
   post '/guests/:id' => 'guests#create'
   get '/guests/retrieve_guest' => 'guests#retrieve_guest'
-  get '/guests/:id' => 'guests#show'
+  # get '/guests/:id' => 'guests#show'
+
+  match 'guests/:id' => 'guests#show', :via => :get
+  match 'guests/:id' => 'guests#update_all', :as => :update_all, :via => :put
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

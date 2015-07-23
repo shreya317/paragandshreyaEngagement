@@ -1,27 +1,10 @@
 /*// Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
 
-// h1 {
-//  position: absolute;
-//  right: 225px;
-//   top: 150px;
-// }
-
-// h2 {
-//  position: relative;
-//  // position: absolute;
-//  // position: fixed;
-//  // right: 225;
-//  // top: 170;
-// }
-
-// .pic {
-//  // position: absolute;
-// }*/
 
 body {
-/*  font-family:'Raleway', Helvetica,Arial,sans-serif;*/
   font-family: 'Lobster Two', cursive;
   font-weight:400;
   background-color: rgba(0,0,0,0.02);
@@ -40,7 +23,7 @@ a {
   text-align: center;
   font-size:1.6em;
   font-weight:600;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 
@@ -82,7 +65,7 @@ li {
   padding-top: 6px;
 }
 
-.namelogo h1, h2 {
+.namelogo h1, h2, h4 {
   font-family: 'Lobster Two', cursive;
   font-size:1.6em;
   font-weight:600;
@@ -197,37 +180,11 @@ hr {
 }
 
 footer {
-  padding: 40px 0 10px 0;
+  padding-top: 20px;
 }
 
 footer a:hover {
   color:rgba(0,0,0,0.4);background-color:transparent;
-}
-
-.rsvp_link a {
-  color: green;
-}
-
-.rsvp_link h2 {
-  text-align: center;
-}
-
-/* Grow */
-.hvr-grow {
-    /*display: inline-block;*/
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.1);
 }
 
 

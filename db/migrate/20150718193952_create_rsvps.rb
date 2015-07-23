@@ -3,6 +3,7 @@ class CreateRsvps < ActiveRecord::Migration
     create_table :rsvps do |t|
       t.references :guest, index: true
       t.boolean :attending
+      t.string  :comments
 
       t.timestamps null: false
     end

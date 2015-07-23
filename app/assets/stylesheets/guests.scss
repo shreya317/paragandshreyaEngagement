@@ -11,8 +11,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lobster Two', cursive;
-    font-weight:400;
+  font-family: 'Lobster Two', cursive;
+  font-weight:400;
 }
 
 .e_login input {
@@ -20,33 +20,33 @@ h6 {
 }
 
 .e_rsvp select {
-    width: 150px;
+  width: 150px;
 }
 
 .e_rsvp .location {
-    margin-bottom: 5px;
-    text-align: center;
-    color: green;
+  margin-bottom: 5px;
+  text-align: center;
+  color: green;
 }
 
 .e_rsvp label h5 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .e_rsvp h4 {
-    text-align: center;
+  text-align: center;
 }
 
 .e_rsvp h3,
 .e_login h3 {
-    text-align: center;
-    padding-bottom: 20px
+  text-align: center;
+  padding-bottom: 20px
 }
 
 .e_rsvp input[type='submit'] {
-    font-family: 'Lobster Two', cursive;
-    width: 200px;
-    height: 100px;
+  font-family: 'Lobster Two', cursive;
+  width: 200px;
+  height: 100px;
 }
 
 .e_rsvp label h5, .e_login label {
@@ -54,81 +54,81 @@ h6 {
 }
 
 .e_rsvp select {
-    font-family:'Raleway', Helvetica,Arial,sans-serif;
-    font-size: 15px;
+  font-family:'Raleway', Helvetica,Arial,sans-serif;
+  font-size: 15px;
 }
 
 .e_rsvp select,
 .e_rsvp textarea,
 .e_login label,
 .e_login input {
-    margin-left: 25px;
-    margin-right: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .e_rsvp textarea {
-    width: 285px;
-    font-family:'Raleway', Helvetica,Arial,sans-serif;
-    resize: none;
+  width: 285px;
+  font-family:'Raleway', Helvetica,Arial,sans-serif;
+  resize: none;
 }
 
 .e_login input {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .e_login form {
-    background: white;
-    padding: 10px;
+  background: white;
+  padding: 10px;
 }
 
 .e_login label, .e_rsvp label {
-    font-size: 15px;
-    padding-bottom: 10px;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 .e_login .indicates-required {
-    padding-right: 20px;
-    text-align: right;
-    color: black;
-    font-size: 13px;
+  padding-right: 20px;
+  text-align: right;
+  color: black;
+  font-size: 13px;
 }
 
 .e_login .asterisk {
-    color: #c60;
+  color: #c60;
 }
 
 .e_login input[type='text'] {
-	width: 275px;
-    font-size: 16px;
+  width: 275px;
+  font-size: 16px;
 }
 
 .e_login input[type='submit'] {
-	margin-bottom: 20px;
-	width: 100px;
-    height: 30px;
-    background: #aaa;
-    color: white;
-    font-size: 16px;
-    font-family: 'Lobster Two', cursive;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  background: #aaa;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lobster Two', cursive;
 }
 
 .e_login input[type='submit']:hover {
-    background-color: gray;
+  background-color: gray;
 }
 
 // large screen
 @media only screen and (min-width: 64.063em) {
-    .e_login input[type='text'] {
-        width: 400px;
-    }
-    .e_login input[type='submit'] {
-        width: 150px;
-    }
-    .e_rsvp input[type='submit'] {
-        width: 100px;
-        height: 30px;
-    }
-    .e_rsvp textarea {
+  .e_login input[type='text'] {
     width: 400px;
-    }
+  }
+  .e_login input[type='submit'] {
+    width: 150px;
+  }
+  .e_rsvp input[type='submit'] {
+    width: 100px;
+    height: 30px;
+  }
+  .e_rsvp textarea {
+    width: 400px;
+  }
 }

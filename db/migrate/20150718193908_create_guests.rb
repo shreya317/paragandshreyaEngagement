@@ -4,6 +4,8 @@ class CreateGuests < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.string :zip_code
+      t.boolean :attending
+      t.string :comments
 
       t.timestamps null: false
     end

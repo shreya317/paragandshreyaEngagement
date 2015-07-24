@@ -2,9 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'address/index'
   get '/guests' => 'guests#index'
-  post '/guests/:id' => 'guests#create'
   get '/guests/retrieve_guest' => 'guests#retrieve_guest'
-  # get '/guests/:id' => 'guests#show'
 
   match 'guests/:id' => 'guests#show', :via => :get
   match 'guests/:id' => 'guests#update_all', :as => :update_all, :via => :put

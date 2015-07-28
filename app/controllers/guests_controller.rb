@@ -3,7 +3,9 @@ class GuestsController < ApplicationController
   end
 
   def retrieve_guest
-    guest = Guest.where({first_name: params[:first_name], last_name: params[:last_name], zip_code: params[:zip_code]}).first
+    first = params[:first_name].capitalize
+    last = params[:last_name].capitalize
+    guest = Guest.where({first_name: first, last_name: last, zip_code: params[:zip_code]}).first
     if guest == nil
       redirect_to "/", :flash => {:error => "Invalid name or zipcode. Please try again or contact the host."}
     elsif guest.encrypted_id

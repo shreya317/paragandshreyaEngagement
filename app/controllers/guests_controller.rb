@@ -4,7 +4,9 @@ class GuestsController < ApplicationController
 
   def retrieve_guest
     guest = Guest.where({first_name: params[:first_name], last_name: params[:last_name], zip_code: params[:zip_code]}).first
-    if guest.encrypted_id
+    if guest == nil
+      redirect_to "/", :flash => {:error => "Invalid name or zipcode. Please try again or contact the host."}
+    elsif guest.encrypted_id
       redirect_to "/guests/#{guest.encrypted_id}"
     else
       guest.encrypted_id = Digest::SHA2.hexdigest(guest.id.to_s)

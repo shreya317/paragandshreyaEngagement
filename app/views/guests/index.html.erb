@@ -17,6 +17,10 @@
     <form action="guests/retrieve_guest" method="get">
       <h3>Engagement R.S.V.P.</h3>
 
+        <% if flash[:error] %>
+            <label class="error"><%=flash[:error]%></label>
+        <%end%>
+
       <div class="indicates-required">
         <span class="asterisk">*</span> indicates required
       </div>
@@ -34,7 +38,7 @@
       <label>Zip Code
         <span class="asterisk">*</span>
       </label>
-      <input type="text" name="zip_code">
+      <input type="text" name="zip_code", placeholder="Use zip code from mailing envelope.">
 
       <input type="submit" value="Submit">
     </form>

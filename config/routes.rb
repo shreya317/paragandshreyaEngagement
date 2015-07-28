@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   get 'address/index'
-  get '/guests' => 'guests#index'
+  get 'welcome' => 'welcome#show'
+  get '/guests' => 'guests#show_all'
   get '/guests/retrieve_guest' => 'guests#retrieve_guest'
 
   match 'guests/:id' => 'guests#show', :via => :get

@@ -1,38 +1,36 @@
 <div class="row guest-list">
-  <div class="large-12 columns">
-  <h2>P&S Engagement - Guest List</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>RSVP</th>
-          <th width="350">Comment(s)</th>
-          <th>Created</th>
-          <th>Updated</th>
-        </tr>
-      </thead>
-      <tbody>
-        <%if @guests%>
-          <%@guests.each do |guest|%>
-            <tr>
-              <td><%=guest.id%></td>
-              <td><%=guest.first_name%> <%=guest.last_name%></td>
-              <td>
-                <%if guest.attending == true%>
-                  Yes
-                <%elsif guest.attending == false%>
-                  No
-                <%else%>
+    <div class="large-12 columns">
+    <h2>P&S Engagement - Guest List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th width="80">Zip Code</th>
+                    <th>RSVP</th>
+                    <th width="350">Comment(s)</th>
+                    <th>Created</th>
+                    <th>Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+            <%if @guests%>
+                <%@guests.each do |guest|%>
+                    <tr>
+                        <td><%=guest.first_name%> <%=guest.last_name%></td>
+                        <td><%=guest.zip_code%></td>
+                        <td><%if guest.attending == true%>
+                                Yes
+                              <%elsif guest.attending == false%>
+                                No
+                              <%else%>
+                              <%end%></td>
+                        <td><%=guest.comments%></td>
+                        <td><%=guest.created_at%></td>
+                        <td><%=guest.updated_at%></td>
+                    </tr>
                 <%end%>
-              </td>
-              <td><%=guest.comments%></td>
-              <td><%=guest.created_at%></td>
-              <td><%=guest.updated_at%></td>
-            </tr>
-          <%end%>
-        <%end%>
-      </tbody>
-    </table>
-  </div>
+            <%end%>
+        </tbody>
+        </table>
+    </div>
 </div>

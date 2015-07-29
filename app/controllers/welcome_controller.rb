@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
   def index
+        @guests = Guest.all.order('attending')
   end
 
   def show
-    @guests = Guest.all.order('attending')
   end
 end

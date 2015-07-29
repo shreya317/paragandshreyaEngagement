@@ -3,6 +3,6 @@ class WelcomeController < ApplicationController
   end
 
   def show
-    @guests = Guest.all
+    @guests = Guest.all.order('attending')
   end
 end

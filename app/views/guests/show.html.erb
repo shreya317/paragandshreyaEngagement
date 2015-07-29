@@ -9,32 +9,32 @@
 </div>
 
 <div class="row e_login">
-    <div class="large-6 medium-6 columns e-pic">
-        <%= image_tag 'DSC_9678.JPG', class:'tree_pic'%>
-    </div>
-    <div class="large-6 medium-6 columns e_rsvp">
-    <!-- Logged in as: <%= @guest.first_name%> -->
-    <!-- <p>Family id: <%=@guest.family_id%></p> -->
-        <%= form_for :guest, :url => update_all_path, :html => { :method => :put } do %>
-            <h3>Engagement R.S.V.P.</h3>
-            <% @family_members.each do |guest|%>
-                <%= fields_for "guest[]", guest do |guest_fields| %>
-                    <label>Hello <%=guest.first_name%>, will you be attending?</label>
-                    <p><%= guest_fields.select(:attending, [['Yes', true], ['No', false]])%></p>
-                    <label class='comment'>Comments(s):</label>
-                    <p><%= guest_fields.text_area(:comments)%></p>
-                <% end %>
-            <% end %>
-            <%= submit_tag %>
-            <hr>
-            <div class= "location">
-                <b><h4 class= "location">Patel Residence</h4></b>
-                <h6 class= "location">9443 Lotus Ave.</h6>
-                <h6 class= "location">Skokie, IL 60077</h6>
-                <br>
-                <h6 class="location">Sunday September 6th, 2015 </h6>
-                <h6 class= "location">10:30 AM</h6>
-            </div>
+  <div class="large-6 medium-6 columns e-pic">
+      <%= image_tag 'DSC_9678.JPG', class:'tree_pic'%>
+  </div>
+  <div class="large-6 medium-6 columns e_rsvp">
+  <!-- Logged in as: <%= @guest.first_name%> -->
+  <!-- <p>Family id: <%=@guest.family_id%></p> -->
+    <%= form_for :guest, :url => update_all_path, :html => { :method => :put } do %>
+      <h3>Engagement R.S.V.P.</h3>
+      <% @family_members.each do |guest|%>
+        <%= fields_for "guest[]", guest do |guest_fields| %>
+          <label>Hello <%=guest.first_name%>, will you be attending?</label>
+          <p><%= guest_fields.select(:attending, [['Yes', true], ['No', false]])%></p>
+          <label class='comment'>Comments(s):</label>
+          <p><%= guest_fields.text_area(:comments)%></p>
         <% end %>
-    </div>
+      <% end %>
+      <%= submit_tag %>
+      <hr>
+      <div class= "location">
+        <b><h4 class= "location">Patel Residence</h4></b>
+        <h6 class= "location">9443 Lotus Ave.</h6>
+        <h6 class= "location">Skokie, IL 60077</h6>
+        <br>
+        <h6 class="location">Sunday September 6th, 2015 </h6>
+        <h6 class= "location">10:30 AM</h6>
+      </div>
+  <% end %>
+  </div>
 </div>

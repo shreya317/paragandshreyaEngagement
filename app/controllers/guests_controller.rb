@@ -31,7 +31,7 @@ class GuestsController < ApplicationController
       @guest.update_attributes(comments: comments)
       @guest.save
     end
-    redirect_to "/welcome/index"
+    redirect_to "/welcome"
   end
 
   private

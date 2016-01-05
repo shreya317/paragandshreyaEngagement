@@ -4,15 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Parag & Shreya" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'moose.JPG' %>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Dancing+Script' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
+      <div class="row nav-bar">
+        <ul>
+          <li class="countdown"><a href="/"><%=countdown()%> Days</a></li>
+          <ul class="tabs nav-options" data-tab>
+            <li class="tab-title active"><%=link_to "Events", events_index_path %></li>
+            <li class="tab-title active"><%=link_to "Accomodations"%></li>
+            <li class="tab-title active"><%=link_to "Wedding Party", weddingparty_index_path%></li>
+            <li class="tab-title active"><%=link_to "R.S.V.P.", rsvp_index_path%></li>
+            <li class="tab-title active"><%=link_to "Contact Us"%></li>
+          </ul>  
+        </ul>
+      </div>
 
     <%= yield %>
 

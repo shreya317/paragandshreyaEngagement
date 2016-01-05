@@ -1,3 +1,75 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#events {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+.epage {
+	background: asset_url("homepage-pic.jpg") no-repeat;
+	background-size: 100%;	
+	height: 665px;
+}
+
+.transbox {
+	height: 350px;
+	margin: 30px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.eventtext {
+	padding: 8%;
+	color: black;
+}
+
+.eventtext h3 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	font-weight: bold;
+	color: blue;
+}
+
+.transbox p {
+	margin-bottom: 0px;
+}
+
+.mehndi {
+	background: asset_url("mehndi1.jpg") no-repeat;
+	background-size: 100%;
+	height: 400px;
+}
+
+.svidhi {
+	background: asset_url("mp2.jpg") no-repeat;
+	background-size: 100%;
+	height: 400px;
+}
+
+.pvidhi {
+	background: asset_url("mp1.jpg") no-repeat;
+	background-size: 100%;
+	height: 400px;
+}
+
+.garba {
+	background: asset_url("dandiya.jpg") no-repeat;
+	background-size: 100%;
+	height: 400px;
+}
+
+.wedding {
+	background-color: red;
+	height: 400px;
+}
+
+.reception{
+	background-color: blue;
+	height: 400px;
+}
+

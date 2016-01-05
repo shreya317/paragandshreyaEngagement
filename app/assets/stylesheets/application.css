@@ -13,5 +13,45 @@
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
+ *= require foundation
 
  */
+
+.nav-bar {
+	width: 1000px;
+	/*position: absolute;*/
+	/*top: 5%;*/
+	left: 8.8%;
+	/*background-color: white;*/
+	/*opacity: 0.8;*/	
+	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
+}
+
+.nav-bar ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-bar li {
+	float: left;
+}
+
+.countdown {
+	font-size: 18px;
+}
+
+.nav-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    /*margin-top: 20px;*/
+    text-decoration: none;
+}
+
+.nav-options {
+	float:right;
+}
